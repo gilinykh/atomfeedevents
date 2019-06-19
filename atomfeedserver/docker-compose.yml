@@ -1,0 +1,13 @@
+version: '2'
+services:
+  atomfeed:
+    container_name: atomfeed
+    image: sameersbn/postgresql:10-1
+    ports:
+      - "54321:5432"
+    environment:
+      - DB_USER=atomfeed_admin
+      - DB_PASS=password
+      - DB_NAME=atomfeed
+    volumes:
+      - ./tmp/docker/atomfeed:/var/lib/db

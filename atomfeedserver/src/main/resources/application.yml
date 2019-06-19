@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: atomfeed_admin
+    password: password
+    url: jdbc:postgresql://localhost:54321/atomfeed
+    driver-class-name: org.postgresql.Driver
+
+  liquibase:
+    change-log: classpath:db/db_migrations.xml
+#    change-log: classpath:sql/liquibase_atomfeed_server.xml
+    parameters:
+      schemaName: atomfeed
+
+
+  main:
+    allow-bean-definition-overriding: true
