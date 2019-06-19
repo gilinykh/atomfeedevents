@@ -1,5 +1,7 @@
 # atomfeed
 
+Spring Boot server and client for atom feed syndication (https://github.com/ICT4H/atomfeed)
+
 ## Server
 Queue events:
 ```
